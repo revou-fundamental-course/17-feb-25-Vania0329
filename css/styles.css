@@ -1,0 +1,350 @@
+/* Ini CSS External */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: aliceblue;
+    color: white;
+}
+
+.logo-container img {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/* Section Hero agar teks berada di tengah */
+.hero-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+}
+
+.hero-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-section h4 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: gray;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/* Garis pemisah untuk setiap bagian */
+.section-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    margin: 40px 0;
+}
+
+.main-content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.main-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.slider {
+    width: 100%;
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 1s ease-in-out;
+}
+
+.testimonial-container {
+    width: 100%;
+    padding: 20px;
+    background: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.testimonial-user {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 14px;
+}
+
+#slide-image, #testimonial-text {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Styling untuk Form Contact Us */
+#contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ddd; 
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-message {
+    text-align: justify;
+    color: gray; 
+}
+
+#contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#contact-form input,
+#contact-form select {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling dropdown (select) */
+#contact-form select {
+    appearance: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Button Submit */
+#contact-form button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Our Package Section */
+#our-package-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: aliceblue;
+    border-top: 2px solid #ddd; 
+    border-bottom: 1px solid #ddd; 
+}
+
+#our-package-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Card Package */
+.package-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #ddd;
+}
+
+.package-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.package-card p {
+    font-size: 14px;
+    color: gray;
+    text-align: justify;
+    padding: 0 15px;
+}
+
+/* Closing Argument Section */
+#closing-argument {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+    border-top: 2px solid #ddd; 
+    border-bottom: 2px solid #ddd; 
+}
+
+/* Judul */
+#closing-argument h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Deskripsi (Teks Tengah) */
+.description {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    color: gray;
+    font-size: 16px;
+}
+
+/* Container Kontak */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+}
+
+/* Item Kontak */
+.contact-item {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6c757d; 
+}
+
+/* Styling Ikon */
+.contact-item i {
+    margin-right: 10px;
+    color: #6c757d; 
+    font-size: 20px;
+}
+
+/* Styling Link */
+.contact-item a {
+    text-decoration: none;
+    color: #6c757d; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover,
+.contact-item:hover {
+    color: #007bff; 
+}
+
+.contact-item i:hover {
+    color: #007bff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Container Footer */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo Styling */
+.logo-container img {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* Link Styling */
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: gray;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright */
+.copyright {
+    color: gray;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+}

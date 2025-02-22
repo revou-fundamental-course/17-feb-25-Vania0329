@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Travel Agency</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tambahkan Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <!-- Logo Company -->
+        <div class="logo-container">
+            <img src="assets\logo.jpg" alt="Travel Agency Logo">
+        </div>
+        
+        <nav>
+            <a href="#" class="no-border-radius-right">Home</a>
+            <a href="#our-package-section" class="no-border-radius">Our Packages</a>
+            <a href="#closing-argument" class="no-border-radius-left">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <header class="hero-section">
+            <h1>Your Trusted Travel Agent's</h1>
+            <h4>Your Happiness is Our Happiness</h4>
+        </header>
+
+        <section class="main-content">
+            <!-- Banner Autoslide -->
+            <aside class="main-container">
+                <div class="slider">
+                    <img id="slide-image" src="assets/arab.avif" alt="Travel Banner">
+                    <div class="testimonial-container">
+                        <p class="testimonial-text" id="testimonial-text">"The trip to Arabia was memorable, a great spiritual experience!"</p>
+                        <p class="testimonial-user" id="testimonial-user">— John Doe, Male, 32</p>
+                    </div>
+                </div>
+            </aside>
+
+
+            <!-- Form Contact Us -->
+            <aside class="main-container">
+                <form id="contact-form">
+                    <h3>Contact Us</h3>
+                    <p class="contact-message">Sales will contact you 1x24 hours after we receive the data.</p>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="First and Last Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                    <label for="destination">Travel Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="" disabled selected>Select Option</option>
+                        <option value="arab">Arab</option>
+                        <option value="bali">Bali</option>
+                        <option value="japan">Japan</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="vietnam">Vietnam</option>
+                    </select>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </aside>
+        </section>
+
+        <!-- Our Packages Section -->
+        <section id="our-package-section">
+            <header>
+                <h2>Our Packages</h2>
+            </header>
+            
+            <!-- Grid Layout for Packages -->
+            <div class="package-grid">
+                <div class="package-card">
+                    <img src="assets/arab.avif" alt="Arab">
+                    <h3>Arab</h3>
+                    <p>Explore the beauty of Arabian culture with a spiritual journey to Mecca and a city tour of Dubai.</p>
+                </div>
+
+                <div class="package-card">
+                    <img src="assets/bali.avif" alt="Bali">
+                    <h3>Bali</h3>
+                    <p>Enjoy the beauty of exotic beaches, traditional culture, and relaxing nature tours in Bali.</p>
+                </div>
+
+                <div class="package-card">
+                    <img src="assets/japan.jpg" alt="Japan">
+                    <h3>Japan</h3>
+                    <p>Experience the magic of Japan with cherry blossoms, samurai culture and advanced technology in Tokyo.</p>
+                </div>
+
+                <div class="package-card">
+                    <img src="assets/singapore.jpg" alt="Singapore">
+                    <h3>Singapore</h3>
+                    <p>Explore a futuristic city with modern parks, delicious cuisine and the beauty of Marina Bay Sands.</p>
+                </div>
+
+                <div class="package-card">
+                    <img src="assets/thailand.jpg" alt="Thailand">
+                    <h3>Thailand</h3>
+                    <p>Culinary specialties, majestic temples and gorgeous tropical beaches await in the land of the White Elephant.</p>
+                </div>
+
+                <div class="package-card">
+                    <img src="assets/vietnam.jpg" alt="Vietnam">
+                    <h3>Vietnam</h3>
+                    <p>From the historic city of Hanoi to the stunning Ha Long Bay, discover the wonders of Vietnam.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing Argument Section -->
+        <section id="closing-argument">
+            <h2>Your Journey Begins Here</h2>
+            <p>Explore a world without borders with our exclusive travel packages.</p>
+            <p>Discover new experiences, unique cultures and unforgettable adventures.</p>
+        
+            <!-- Contact Info -->
+            <div class="contact-container">
+                <div class="contact-item">
+                    <a href="tel:+6282123608962">
+                        <i class="fa-solid fa-phone"></i> +62 821-2360-8962
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="mailto:vandorshopid@gmail.com">
+                        <i class="fa-solid fa-envelope"></i> vandorshopid@gmail.com
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-clock"></i> Monday - Friday, 09:00 - 17:00 WIB
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo di Tengah -->
+            <div class="logo-container">
+                <img src="assets\logo.jpg" alt="World Travel Logo">
+            </div>
+            <!-- Links & Copyright -->
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p class="copyright">© 2025 Vania</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
