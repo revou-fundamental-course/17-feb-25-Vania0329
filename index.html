@@ -11,6 +11,9 @@
     <!-- Tambahkan Font Awesome untuk ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -31,18 +34,22 @@
     <!-- Main Content -->
     <main>
         <header class="hero-section">
-            <h1>Your Trusted Travel Agent's</h1>
+            <h1>Your Trusted Travel Partner</h1>
             <h4>Your Happiness is Our Happiness</h4>
+            <p>Discover the world's most beautiful destinations with us. Unforgettable adventures await!</p>
         </header>
+        
 
         <section class="main-content">
             <!-- Banner Autoslide -->
             <aside class="main-container">
+                <h2>Customer Testimonials</h2>
                 <div class="slider">
                     <img id="slide-image" src="assets/arab.avif" alt="Travel Banner">
                     <div class="testimonial-container">
                         <p class="testimonial-text" id="testimonial-text">"The trip to Arabia was memorable, a great spiritual experience!"</p>
-                        <p class="testimonial-user" id="testimonial-user">— John Doe, Male, 32</p>
+                        <p class="testimonial-user" id="testimonial-user"><i class="fa fa-user"></i>
+                            John Doe, Male, 32</p>
                     </div>
                 </div>
             </aside>
@@ -64,7 +71,7 @@
                     <select id="destination" name="destination" required>
                         <option value="" disabled selected>Select Option</option>
                         <option value="arab">Arab</option>
-                        <option value="bali">Bali</option>
+                        <option value="indonesia">Indonesia</option>
                         <option value="japan">Japan</option>
                         <option value="singapore">Singapore</option>
                         <option value="thailand">Thailand</option>
@@ -87,37 +94,55 @@
                 <div class="package-card">
                     <img src="assets/arab.avif" alt="Arab">
                     <h3>Arab</h3>
+                    <h4><i class="fa-solid fa-calendar-alt"></i> 7D6N - Spiritual & Luxury Tour</h4>
                     <p>Explore the beauty of Arabian culture with a spiritual journey to Mecca and a city tour of Dubai.</p>
+                    <p><strong>Accommodation:</strong> 5 star hotel near Grand Mosque & Burj Khalifa view</p>
+                    <p><strong>Highlights:</strong> Umrah, religious tour in Medina, desert safari in Dubai</p>
                 </div>
 
                 <div class="package-card">
-                    <img src="assets/bali.avif" alt="Bali">
-                    <h3>Bali</h3>
+                    <img src="assets/indonesia.avif" alt="Indonesia">
+                    <h3>Indonesia</h3>
+                    <h4><i class="fa-solid fa-calendar-alt"></i> 5D4N - Bali Paradise Escape</h4>
                     <p>Enjoy the beauty of exotic beaches, traditional culture, and relaxing nature tours in Bali.</p>
+                    <p><strong>Accommodation:</strong> Beachfront resort & villas with private pool</p>
+                    <p><strong>Highlights:</strong> Snorkeling, cultural tourism in Ubud, sunset at Tanah Lot</p>
                 </div>
 
                 <div class="package-card">
                     <img src="assets/japan.jpg" alt="Japan">
                     <h3>Japan</h3>
+                    <h4><i class="fa-solid fa-calendar-alt"></i> 6D5N - Sakura & Samurai Adventure</h4>
                     <p>Experience the magic of Japan with cherry blossoms, samurai culture and advanced technology in Tokyo.</p>
+                    <p><strong>Accommodation:</strong> Modern hotel in Tokyo & traditional Ryokan in Kyoto</p>
+                    <p><strong>Highlights:</strong> Kimono experience, Mount Fuji tour, Universal Studios Osaka</p>
                 </div>
 
                 <div class="package-card">
                     <img src="assets/singapore.jpg" alt="Singapore">
                     <h3>Singapore</h3>
+                    <h4><i class="fa-solid fa-calendar-alt"></i> 4D3N - Futuristic City Break</h4>
                     <p>Explore a futuristic city with modern parks, delicious cuisine and the beauty of Marina Bay Sands.</p>
+                    <p><strong>Accommodation:</strong> 4-star hotel in the city center</p>
+                    <p><strong>Highlights:</strong> Garden by the Bay, Night Safari, shopping at Orchard</p>
                 </div>
 
                 <div class="package-card">
                     <img src="assets/thailand.jpg" alt="Thailand">
                     <h3>Thailand</h3>
+                    <h4><i class="fa-solid fa-calendar-alt"></i> 5D4N - Exotic Thai Getaway</h4>
                     <p>Culinary specialties, majestic temples and gorgeous tropical beaches await in the land of the White Elephant.</p>
+                    <p><strong>Accommodation:</strong> Beachfront resort & 4-star hotel in the city</p>
+                    <p><strong>Highlights:</strong> Grand Palace, Phi Phi Island tour, street food tour</p>
                 </div>
 
                 <div class="package-card">
                     <img src="assets/vietnam.jpg" alt="Vietnam">
                     <h3>Vietnam</h3>
+                    <h4><i class="fa-solid fa-calendar-alt"></i> 6D5N - Heritage & Nature Explorer</h4>
                     <p>From the historic city of Hanoi to the stunning Ha Long Bay, discover the wonders of Vietnam.</p>
+                    <p><strong>Accommodation:</strong> Luxury cruise in Ha Long Bay & boutique hotel in Hanoi</p>
+                    <p><strong>Highlights:</strong> Historical tours in the Old Quarter, kayaking in Ha Long Bay</p>
                 </div>
             </div>
         </section>
@@ -131,6 +156,9 @@
             <!-- Contact Info -->
             <div class="contact-container">
                 <div class="contact-item">
+                    <i class="fa-solid fa-clock"></i> Monday - Friday, 09:00 - 17:00 WIB
+                </div>
+                <div class="contact-item">
                     <a href="tel:+6282123608962">
                         <i class="fa-solid fa-phone"></i> +62 821-2360-8962
                     </a>
@@ -139,9 +167,6 @@
                     <a href="mailto:vandorshopid@gmail.com">
                         <i class="fa-solid fa-envelope"></i> vandorshopid@gmail.com
                     </a>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-clock"></i> Monday - Friday, 09:00 - 17:00 WIB
                 </div>
             </div>
         </section>

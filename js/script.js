@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             age: "35 years"
         },
         {
-            image: "assets/bali.avif",
+            image: "assets/indonesia.avif",
             text: '"Bali has beautiful beaches and a unique culture. An unforgettable vacation!"',
             name: "Jessica Tan",
             gender: "Female",
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             image: "assets/vietnam.jpg",
             text: '"Vietnam has beautiful nature, especially Ha Long Bay. Great trip!"',
             name: "Nguyen Phu",
-            gender: "Male",
+            gender: "Female",
             age: "31 years"
         }
     ];
@@ -63,6 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
             testimonialText.textContent = slides[currentIndex].text;
             testimonialUser.textContent = `${slides[currentIndex].name}, ${slides[currentIndex].gender}, ${slides[currentIndex].age}`;
 
+            // Tentukan warna berdasarkan gender
+            let color = slides[currentIndex].gender === "Male" ? "blue" : "red";
+
+            // Tambahkan ikon user Font Awesome dengan warna yang sesuai
+            testimonialUser.innerHTML = `<i class="fa-solid fa-user" style="color: ${color};"></i> 
+            <span style="color: ${color};">${slides[currentIndex].name}, ${slides[currentIndex].gender}, ${slides[currentIndex].age}</span>`;
+            
             // Efek fade in setelah mengganti konten
             slideImage.style.opacity = 1;
             testimonialText.style.opacity = 1;
@@ -70,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 500); // Delay 500ms sebelum menampilkan yang baru
     }
 
-    setInterval(changeSlide, 3000);
+    setInterval(changeSlide, 7000);
 });
 
     // Form Validation
@@ -80,17 +87,27 @@ document.addEventListener("DOMContentLoaded", function () {
         let name = document.getElementById("name").value.trim();
         let email = document.getElementById("email").value.trim();
         let destination = document.getElementById("destination").value.trim();
-
-        if (name === "" || email === "" || destination === "") {
-            alert("All fields must be filled out!");
+    
+        // Validasi semua field harus diisi
+        if (!name || !email || !destination) {
+            alert("All fields must be filled out properly!");
             return;
         }
-
-        if (!email.includes("@") || !email.includes(".")) {
+    
+        // Validasi panjang nama minimal 3 karakter
+        if (name.length < 3) {
+            alert("Name must be at least 3 characters long!");
+            return;
+        }
+    
+        // Validasi email dengan Regex
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailPattern.test(email)) {
             alert("Please enter a valid email address!");
             return;
         }
-
+    
+        // Jika validasi berhasil
         alert("Form submitted successfully!");
         this.reset();
-    });
+    });    
